@@ -1,7 +1,7 @@
 {
   "Print to console variable": {
     "scope": "javascript,typescript,typescriptreact",
-    "prefix": "clo",
+    "prefix": "clop",
     "body": [
       "console.log('👀 [$TM_FILENAME:$TM_LINE_NUMBER]: ${1:variable}', ${1:variable});"
     ],
