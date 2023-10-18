@@ -20,4 +20,4 @@ In your VS Code editor, simply type `clop` to trigger this helpful snippet.
 
 Enjoy simplified debugging with automatic filename prefixes for your console.log statements!
 
-![demo](./video-clo-prefix-filename.gif)
+![demo](https://github.com/jeremieflrnt/clo-prefix-filename/blob/main/video-clo-prefix-filename.gif?raw=true)

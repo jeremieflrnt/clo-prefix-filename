@@ -4,6 +4,7 @@
   "description": "Snippet for console log a variable prefixed with filename and variable name",
   "version": "0.0.1",
   "publisher": "jeremieflrnt",
+  "icon": "./icon.png",
   "engines": {
     "vscode": "^1.28.0"
   },
