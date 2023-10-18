@@ -11,10 +11,29 @@
   "categories": [
     "Snippets"
   ],
+  "keywords": [
+    "snippets",
+    "clo",
+    "log",
+    "console",
+    "console.log"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeremieflrnt/clo-prefix-filename.git"
+  },
   "contributes": {
     "snippets": [
       {
-        "language": "javascript,typescript,typescriptreact",
+        "language": "javascript",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets.json"
+      },
+      {
+        "language": "typescriptreact",
         "path": "./snippets.json"
       }
     ]
