@@ -16,8 +16,16 @@ console.log("👀 [filename.ts:21]: variable", variable);
 
 ## Usage
 
-In your VS Code editor, simply type `clop` to trigger this helpful snippet.
+In your VS Code editor, simply type `clop` or `clo` to trigger this helpful snippet.
 
 Enjoy simplified debugging with automatic filename prefixes for your console.log statements!
 
 ![demo](https://github.com/jeremieflrnt/clo-prefix-filename/blob/main/video-clo-prefix-filename.gif?raw=true)
+
+### You already have clo snippet enable and want to remplace it by this snippet?
+
+You can hide specific snippets from showing in IntelliSense (completion list) by selecting the `Hide from IntelliSense` button to the right of snippet items in the `Insert Snippet` command dropdown (press `cmd+shift+P | ctrl+shift+P`).
+
+![hide from intellisense](https://github.com/jeremieflrnt/clo-prefix-filename/blob/main/hide-from-intellisense.png?raw=true)
+
+[Source](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_can-i-remove-snippets-from-intellisense)
