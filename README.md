@@ -29,3 +29,30 @@ You can hide specific snippets from showing in IntelliSense (completion list) by
 ![hide from intellisense](https://github.com/jeremieflrnt/clo-prefix-filename/blob/main/hide-from-intellisense.png?raw=true)
 
 [Source](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_can-i-remove-snippets-from-intellisense)
+
+## NEW snippet added
+
+A new snippet is available to allow debugging of complex object with nested objects and/or arrays.
+
+Instead of your typical `console.log`, you can use `clodir` or `clopdir` to print the object correctly.
+
+No more `[Object]` that you want to print also!
+
+```
+ComplexObject {
+  a: { b: true, c: [ 1, 2, 3 ], d: { e: 'Nested String', f: [Object] } }
+}
+```
+
+![demo](https://github.com/jeremieflrnt/clo-prefix-filename/blob/main/video-clodir.gif?raw=true)
+
+```javascript
+// This will print the entire object structure with details
+console.dir(myComplexObject, { showHidden: false, depth: null, colors: true });
+```
+
+## To create package
+
+Change npm package version and run:
+
+`vsce package`

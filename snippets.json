@@ -6,5 +6,13 @@
       "console.log('👀 [$TM_FILENAME:$TM_LINE_NUMBER]: ${1:variable}', ${1:variable});"
     ],
     "description": "Log output to console with filename as prefix"
+  },
+  "Print to console an object recursively": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": ["clopdir", "clodir"],
+    "body": [
+      "console.dir(${1:variable}, {showHidden: false, depth: null, colors: true});"
+    ],
+    "description": "Log a string representation of the object as intended. No more {a: [Object]}"
   }
 }
