@@ -38,13 +38,28 @@ Instead of your typical `console.log`, you can use `clodir` or `clopdir` to prin
 
 No more `[Object]` that you want to print also!
 
-```
+```json
 ComplexObject {
   a: { b: true, c: [ 1, 2, 3 ], d: { e: 'Nested String', f: [Object] } }
 }
 ```
 
+Instead, print:
+
+```json
+ComplexObject {
+  a: {
+    b: true,
+    c: [ 1, 2, 3 ],
+    d: { e: 'Nested String', f: { g: 'Another Nested String' } }
+  },
+  h: [ { prop: 'value' }, { prop: 'another value' } ]
+}
+```
+
 ![demo](https://github.com/jeremieflrnt/clo-prefix-filename/blob/main/video-clodir.gif?raw=true)
+
+What's behind is a `console.dir`
 
 ```javascript
 // This will print the entire object structure with details
