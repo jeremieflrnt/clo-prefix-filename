@@ -2,7 +2,7 @@
   "name": "clo-prefix-filename",
   "displayName": "Snippet clo with prefix",
   "description": "Snippet for console log a variable prefixed with filename and variable name",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "jeremieflrnt",
   "icon": "./icon.png",
   "engines": {

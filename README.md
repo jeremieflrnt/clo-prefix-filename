@@ -63,7 +63,11 @@ What's behind is a `console.dir`
 
 ```javascript
 // This will print the entire object structure with details
-console.dir(myComplexObject, { showHidden: false, depth: null, colors: true });
+console.dir("👀 [filename.ts:21]: myComplexObject", {
+  showHidden: false,
+  depth: null,
+  colors: true,
+});
 ```
 
 ## To create package
