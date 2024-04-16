@@ -11,7 +11,7 @@
     "scope": "javascript,typescript,typescriptreact",
     "prefix": ["clopdir", "clodir"],
     "body": [
-      "console.dir('👀 [$TM_FILENAME:$TM_LINE_NUMBER]: ${1:variable}', {showHidden: false, depth: null, colors: true});"
+      "console.dir(${1:variable}, {showHidden: false, depth: null, colors: true});"
     ],
     "description": "Log a string representation of the object as intended. No more {a: [Object]}"
   }
