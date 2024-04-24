@@ -3,16 +3,24 @@
     "scope": "javascript,typescript,typescriptreact",
     "prefix": ["clop", "clo"],
     "body": [
-      "console.log('👀 [$TM_FILENAME:$TM_LINE_NUMBER]: ${1:variable}', ${1:variable});"
+      "console.log(...[${1:variable}, '👀 [$TM_FILENAME:$TM_LINE_NUMBER]: ${1:variable}'].reverse());"
     ],
     "description": "Log output to console with filename as prefix"
   },
-  "Print to console an object recursively": {
+  "Print to console an object recursively as an object": {
     "scope": "javascript,typescript,typescriptreact",
     "prefix": ["clopdir", "clodir"],
     "body": [
       "console.dir(${1:variable}, {showHidden: false, depth: null, colors: true});"
     ],
-    "description": "Log a string representation of the object as intended. No more {a: [Object]}"
+    "description": "Log the object as intended. No more {a: [Object]}. On a browser console, user can expand the object to access nested object."
+  },
+  "Print to console an object recursively as a text": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": ["clopobj", "cloobj"],
+    "body": [
+      "console.log(...[JSON.stringify(${1:variable}, null, 2), '👀 [$TM_FILENAME:$TM_LINE_NUMBER] ${1:variable}:\\n',].reverse());"
+    ],
+    "description": "Log a string representation of the object as intended. No more {a: [Object]}. Be careful as big object can be hard to read on console."
   }
 }
